@@ -34,29 +34,60 @@ header {
   margin-left: 15px;
 }
 
-.menu ul {
+#menu-desktop ul {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 5px;
 }
 
-.menu ul li a {
+#menu-desktop ul li a {
   text-decoration: none;
   padding: 5px 15px;
   color: #124265;
   font-weight: 500;
 }
 
-.menu ul li a:hover {
+#menu-desktop ul li a:hover {
   color: #007bff;
 }
 
 #menu-mobile {
   color: #124265;
   font-size: 20px;
-  margin-right: 10px;
+  position: relative;
+  cursor: pointer;
   display: none;
+}
+
+#menu-mobile ul {
+  background-color: rgb(252, 252, 252);
+  position: absolute;
+  top: 55px;
+  right: 0;
+  width: 100vw;
+  opacity: 0;
+  transition: 0.7s;
+}
+
+#menu-mobile ul li {
+  font-size: 16px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+#menu-mobile ul li a {
+  text-decoration: none;
+  color: #124265;
+  font-weight: 500;
+}
+
+.show-menu-mobile {
+  opacity: 1 !important;
+}
+
+#menu-mobile ul li a:hover {
+  color: #007bff;
 }
 
 #main {
