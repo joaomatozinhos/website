@@ -31,24 +31,32 @@ header {
   font-size: 24px;
   font-weight: 600;
   color: #16507b;
+  margin-left: 15px;
 }
 
-#menu ul {
+.menu ul {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 5px;
 }
 
-#menu ul li a {
+.menu ul li a {
   text-decoration: none;
   padding: 5px 15px;
   color: #124265;
   font-weight: 500;
 }
 
-#menu ul li a:hover {
+.menu ul li a:hover {
   color: #007bff;
+}
+
+#menu-mobile {
+  color: #124265;
+  font-size: 20px;
+  margin-right: 10px;
+  display: none;
 }
 
 #main {
@@ -123,15 +131,96 @@ header {
   line-height: 30px;
 }
 
+#box-about {
+  max-width: 75%;
+  margin: 0 auto;
+}
+
+#about {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#about h2 {
+  color: #16507b;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+#more-about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+#more-about p {
+  margin-bottom: 10px;
+}
+
+#more-about div i {
+  color: #007bff;
+  font-size: 14px;
+  margin-left: 15px;
+}
+
+#more-about button {
+  padding: 8px 15px;
+  background-color: transparent;
+  border: 2px solid #007bff;
+  color: #007bff;
+  font-weight: 700;
+  transition: 0.5s;
+}
+
+#more-about button:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+#achievements {
+  background-color: rgba(245, 245, 245, 0.884);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 20px 0px;
+}
+
+#achievements div {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+#achievements div p {
+  font-weight: 600;
+}
+
+#achievements div p:first-child {
+  color: #16507b;
+  font-size: 30px;
+  font-weight: 700;
+}
+
 @media only screen and (max-width: 670px) {
-  #header {
-    flex-direction: column;
+  #menu-desktop {
+    display: none;
   }
-  #menu ul {
-    flex-wrap: wrap;
+
+  #menu-mobile {
+    display: block;
   }
 
   .card {
     width: 100%;
+  }
+
+  #box-about {
+    max-width: 100%;
+    margin: 0 20px;
+  }
+
+  #more-about {
+    grid-template-columns: 1fr;
   }
 }
