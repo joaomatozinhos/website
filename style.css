@@ -162,6 +162,12 @@ header {
   line-height: 30px;
 }
 
+.subtitle {
+  color: #16507b;
+  margin-bottom: 10px;
+  font-size: 26px;
+}
+
 #box-about {
   max-width: 75%;
   margin: 0 auto;
@@ -172,17 +178,11 @@ header {
   margin-bottom: 40px;
 }
 
-#about h2 {
-  color: #16507b;
-  margin-bottom: 10px;
-  font-size: 24px;
-}
-
 #more-about {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
-  margin-bottom: 40px;
+  margin-bottom: 80px;
 }
 
 #more-about p {
@@ -233,6 +233,107 @@ header {
   font-weight: 700;
 }
 
+#informations {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+#informations div img {
+  width: 100%;
+  border-radius: 3px;
+}
+
+#informations div p {
+  margin: 15px 0;
+}
+
+#informations div i {
+  color: #007bff;
+  font-size: 14px;
+  margin-left: 15px;
+}
+
+#clients {
+  background-color: rgba(245, 245, 245, 0.884);
+}
+
+#clients div {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 40px 0;
+}
+
+#clients div img {
+  width: 90px;
+  margin: 10px 20px;
+  filter: grayscale(100%);
+  transition: 0.7s;
+}
+
+#clients div img:hover {
+  filter: grayscale(0);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+#testimonials {
+  max-width: 1200px;
+  margin: 80px auto;
+  text-align: center;
+}
+
+#box-testimonials {
+  display: flex;
+  gap: 20px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.box-testimonial {
+  width: 350px;
+  margin-top: 30px;
+}
+
+.box-testimonial div {
+  background-color: rgba(245, 245, 245, 0.884);
+  padding: 20px;
+}
+
+.box-testimonial img {
+  width: 100px;
+  margin: 10px 0;
+  border-radius: 50%;
+}
+
+#box-testimonials i.fas.fa-quote-left,
+#box-testimonials i.fas.fa-quote-right {
+  color: rgb(175, 175, 175);
+  padding: 0 8px;
+}
+
+.text-testimonial {
+  font-style: italic;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.name-testimonial {
+  font-weight: 600;
+}
+
+.role-testimonial {
+  color: rgb(175, 175, 175);
+  font-size: 14px;
+}
+
 @media only screen and (max-width: 670px) {
   #menu-desktop {
     display: none;
@@ -253,5 +354,10 @@ header {
 
   #more-about {
     grid-template-columns: 1fr;
+  }
+
+  #informations {
+    grid-template-columns: 1fr;
+    margin: 40px 20px;
   }
 }
