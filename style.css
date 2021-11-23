@@ -453,6 +453,7 @@ header {
   margin-bottom: 20px;
   border: 1px solid rgb(184, 184, 184);
   font-family: 'Roboto', sans-serif;
+  font-size: 15px;
   border-radius: 4px;
   outline: none;
 }
@@ -475,6 +476,100 @@ header {
 
 #send-message button:hover {
   background-color: #3595da;
+}
+
+#footer1 {
+  background-color: rgba(245, 245, 245, 0.884);
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 60px 80px;
+}
+
+#infos-footer h2 {
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+#infos-footer span {
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.637);
+}
+
+#infos-footer p {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.63);
+}
+
+#links-footer h3,
+#services-footer h3 {
+  color: #124265;
+  font-weight: 600;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+#links-footer ul li,
+#services-footer ul li {
+  list-style: circle;
+  margin-left: 25px;
+  margin-bottom: 7px;
+  font-size: 14px;
+}
+
+#links-footer ul li a,
+#services-footer ul li a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.63);
+}
+
+#newsletter-footer p {
+  margin-bottom: 20px;
+}
+
+#newsletter-footer input {
+  width: 65%;
+  padding: 10px 20px;
+  border: 1px solid rgb(184, 184, 184);
+  border-radius: 3px;
+  outline: none;
+}
+
+#newsletter-footer button {
+  background: #2487ce;
+  color: #fff;
+  border: 0;
+  margin-top: 3px;
+  padding: 10px 20px;
+  transition: 0.4s;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#newsletter-footer button:hover {
+  background-color: #3595da;
+}
+
+#footer2 {
+  background-color: rgb(252, 252, 252);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 80px;
+}
+
+#copyright-footer {
+  font-size: 14px;
+  margin-right: 30px;
+}
+
+#social-medias i {
+  font-size: 30px;
+  margin-left: 8px;
+  color: #3194db;
 }
 
 @media only screen and (max-width: 670px) {
